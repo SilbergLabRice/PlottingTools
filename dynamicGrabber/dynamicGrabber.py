@@ -117,7 +117,7 @@ def plotter(time, samples, fileHandle):
     ax.legend(loc='upper left', bbox_to_anchor=(1.05, 0.5) , fontsize=10)
     ax.legend(frameon=False, fontsize=6)
 
-)
+
     ax.set_xlim([0, 2])
     ax.set_xticks([0,0.5,1,1.5,2])
     ax.set_yticks([0,0.2,0.4,0.6])
