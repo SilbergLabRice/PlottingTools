@@ -17,7 +17,7 @@ Sample objects are defined under the main() function by editing the "plateKey", 
 The above plate key will create two sample objects, with three growth conditions each (100, 50, and 25) that are defined by the well strings within their respective dictionaries.
 
 ## Growth Curve Modeler (GCM)
-A utility for modelling growth rate, lag time, and max optical density given a set of growth curves.  Algorithm citation(https://doi.org/10.1016/j.mimet.2016.11.015).  The folder contains the original algorithm, the conda environment (.yml file) needed to run the script, and a second script for taking 
+A utility for modelling growth rate, lag time, and max optical density given a set of growth curves.  Algorithm citation(https://doi.org/10.1016/j.mimet.2016.11.015).  The folder contains the original algorithm, the conda environment (.yml file) needed to run the script, and a second script for formatting Tecan data for the gcm script.
 
 Build conda environment:
 ```
