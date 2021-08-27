@@ -6,7 +6,7 @@ A collection of plotting scripts for basic synthetic biology applications
 * numpy
 * pandas
 
-## Dyanmic grabber
+## Dynamic grabber
 Takes in slightly-reformatted .csv files output by kinetic runs when run in "by row" mode. 
 Sample objects are defined under the main() function by editing the "plateKey", which is a list of dictionaries that define which wells correspond to which growth conditions in the various samples.
 ```
