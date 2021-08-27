@@ -15,3 +15,33 @@ Sample objects are defined under the main() function by editing the "plateKey", 
 ```
 
 The above plate key will create two sample objects, with three growth conditions each (100, 50, and 25) that are defined by the well strings within their respective dictionaries.
+
+## Growth Curve Modeler (GCM)
+A utility for modelling growth rate, lag time, and max optical density given a set of growth curves.  Algorithm citation( .  The folder contains the original algorithm, the conda environment (.yml file) needed to run the script, and a second script for taking 
+
+Build conda environment:
+```
+$ conda env create -n RA -f RA.yml
+```
+
+Activate RA environment
+```
+$ conda activate RA
+```
+
+1.	Go to RA directory
+2.	Edit raPrepper.py to transform data of interest into RA format
+  a.	Needs to be Tecan data
+    i.	Copy and paste the “Table” values into csv (include Time, cycle number, temp, etc.)
+  b.	Edit raPrepper.py variable: wellNamesMod to include list of wells of interest, but keep “Time [s]”.
+  c.	Set desired DataDivisor value and max Data value in the main function at the bottom
+3.	Run raPrepper.py
+```
+$ python raPrepper.py
+```
+4.	Save output csv as .xlsx file
+5.	Edit gcmRunner.py to “call” file of interest
+6.	Run gcmPrepper.py
+```
+$ python gcmPrepper.py
+```
