@@ -29,12 +29,13 @@ Activate RA environment
 $ conda activate RA
 ```
 
-1.	Go to RA directory
-2.	Edit raPrepper.py to transform data of interest into RA format
-  a.	Needs to be Tecan data
-    i.	Copy and paste the “Table” values into csv (include Time, cycle number, temp, etc.)
-  b.	Edit raPrepper.py variable: wellNamesMod to include list of wells of interest, but keep “Time [s]”.
-  c.	Set desired DataDivisor value and max Data value in the main function at the bottom
+After activating environment, follow these steps
+1.Go to RA directory
+2.Edit raPrepper.py to transform data of interest into RA format
+ -Needs to be Tecan data
+   -Copy and paste the “Table” values into csv (include Time, cycle number, temp, etc.)
+ -Edit raPrepper.py variable: wellNamesMod to include list of wells of interest, but keep “Time [s]”.
+ -Set desired DataDivisor value and max Data value in the main function at the bottom
 3.	Run raPrepper.py
 ```
 $ python raPrepper.py
