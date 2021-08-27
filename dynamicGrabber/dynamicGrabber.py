@@ -139,7 +139,7 @@ def main():
   file = fileHandle+'.csv'
 
 
-  normalNames=["NaBr","NaCl"]
+  normalNames=["Condition 1","Condition 2"]
 
   divisor=10
   maxValue=1000
