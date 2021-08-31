@@ -19,6 +19,8 @@ The above plate key will create two sample objects, with three growth conditions
 ## Growth Curve Modeler (GCM)
 A utility for modelling growth rate, lag time, and max optical density given a set of growth curves.  Algorithm citation(https://doi.org/10.1016/j.mimet.2016.11.015).  The folder contains the original algorithm, the conda environment (.yml file) needed to run the script, and a second script for formatting Tecan data for the gcm script.
 
+Growth parameters are calculated by smoothing the data with a median filter, and then fitting to a modified logistic equation
+
 Build conda environment:
 ```
 $ conda env create -n RA -f RA.yml
