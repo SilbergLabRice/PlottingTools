@@ -25,11 +25,14 @@ Build conda environment:
 ```
 $ conda env create -n RA -f RA.yml
 ```
+_This installs all the perequisite packages such as Numpy, matplotlib etc. 
+in a containerized environment so you don't need to worry about them individually_
 
 Activate RA environment
 ```
 $ conda activate RA
 ```
+_This activates the environment that has all the packages needed for the script_ 
 
 After activating environment, follow these steps
 1. Go to RA directory
@@ -44,7 +47,7 @@ $ python raPrepper.py
 ```
 4. Save output csv as .xlsx file
 5. Edit gcmRunner.py to “call” file of interest
-6. Run gcmPrepper.py
+6. Run gcmRunner.py
 ```
-$ python gcmPrepper.py
+$ python gcmRunner.py
 ```
