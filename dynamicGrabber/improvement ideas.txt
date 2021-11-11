@@ -1,0 +1,17 @@
+0. figure out how to push commits to https://github.com/SilbergLabRice/PlottingTools
+- Seems to require admin access etc. Editing the readme directly on the website seemed to work so don't know what's wrong when pushing from local..
+
+1. Make the file load directly from the .xls file output by Tecan/Infinite
+- Figure out identifiers and differences
+
+2. Get sample names and other metadata -- get the user to make a 96 well table in a 
+different sheet?
+
+3. Fix the plotting to show Std devs as a shadow rather than lines?> visually better
+
+4. Need to vectorize a lot of the for loops -- ??
+----------------------------
+Rstudio version
+
+Alternatively just copy the colours and run this is R -- since infrastructure is already setup
+- implement datadivider to sub-sample data -- or a median filter
